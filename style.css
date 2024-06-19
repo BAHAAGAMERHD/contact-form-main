@@ -1,0 +1,112 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Green-200-lighter-: hsl(148, 38%, 91%);
+    --Green-600-medium: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-500-medium: hsl(186, 15%, 59%);
+    --Grey-900-darker: hsl(187, 24%, 22%)
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+body {
+    background-color: var(--Green-200-lighter-);
+    font-family: "Karla", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.form-container h1 {
+    font-weight: 700;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-container .alternatives-container {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+}
+
+.form-container .alternatives-container .alternative {
+    padding: 10px;
+
+}
+
+.input-container {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-container textarea {
+    height: 80px;
+}
+
+input,
+textarea,
+.form-container .alternatives-container .alternative {
+    border-radius: 7px;
+    border: var(--Grey-900-darker) 1px solid;
+    resize: none;
+}
+
+label {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+input {
+    padding: 10px;
+}
+
+#submit {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: var(--Green-200-lighter-);
+    background-color: var(--Green-600-medium);
+}
